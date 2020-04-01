@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout.css" />
+    <title>Document</title>
+</head>
+<body>
+    <input id="title" type="text"/>
+    <input id="add" type="button" value="添加定时器按钮"/>
+    <hr/>
+    <div id="main"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./main.js" ></script>
+<script>
+    $(function(){
+        var title=$("#title").val();
+            var tb=new TimerButton();
+            tb.show({
+                num:10,
+                title:"title",
+                onClick:function(){
+                    console.log("ok");
+            }
+        });
+        var $btn=$('#add');
+        $btn.click(function(){
+            var title=$("#title").val();
+            var tb=new TimerButton();
+            tb.show({
+                num:10,
+                title:title,
+                onClick:function(){
+                    console.log("ok");
+                }
+            });
+        })
+
+    // var $btn=$('#add');
+    // $timerButton.show({
+    //     num:9,
+    //     title:"title",
+    //     onClick:function(){
+    //         console.log("haha");
+    //     }
+    // });
+    // $btn.click(function(){
+    //     var title=$("#title").val();
+    //     $timerButton.show({
+    //         num:10,
+    //         title:title,
+    //         onClick:function(){
+    //             console.log("ok");
+    //         }
+    //     });
+    // })
+})
+</script>
+</html>

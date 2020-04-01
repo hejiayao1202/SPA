@@ -1,0 +1,20 @@
+#out{
+    position: relative;
+    width: 200px;
+    height: 32px;
+}
+#pwd{
+    width: 200px;
+    height: 29px;
+    font-size: 25px;
+}
+#eye{
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-image: url("./nosee.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1px;
+    top:1px;
+}

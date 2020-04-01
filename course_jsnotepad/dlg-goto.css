@@ -1,0 +1,68 @@
+.notepad-dlg-goto{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    /* background-color: grey; */
+    z-index: 10;
+}
+.notepad-dlg-goto .dialog-box{
+    border: 1px solid rgb(253, 103, 3);
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    box-sizing: border-box;
+    cursor: default;
+    height: 160px;
+    width: 293px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+    /* 不能选中文字 */
+    user-select: none;
+}
+.notepad-dlg-goto .titlebar{
+    height: 30px;
+    background-color: white;
+    font-size: 15px;
+}
+.notepad-dlg-goto .title{
+    left: 10px;
+    line-height: 30px;
+    position: absolute;
+    margin: 0;
+}
+.notepad-dlg-goto .close-btn{
+    line-height: 30px;
+    position: absolute;
+    right: 10px;
+    color: rgb(88, 88, 88);
+}
+.notepad-dlg-goto .main{
+    background-color: #f0f0f0;
+    height: 127px;
+    box-sizing: border-box;
+    padding: 12px;
+    position: relative;
+}
+.linenum{
+    font-size: 13px;
+}
+.txt-linenum{
+    width: 250px;
+    height: 20px;
+    margin: 7px 0 0 2px;
+}
+.btn-goto{
+    width: 86px;
+    height: 28px;
+    position: absolute;
+    right: 108px;
+    bottom: 16px;
+}
+.btn-cancel{
+    width: 86px;
+    height: 28px;
+    position: absolute;
+    right: 14px;
+    bottom: 16px;
+}
